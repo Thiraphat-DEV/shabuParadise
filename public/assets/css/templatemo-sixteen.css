@@ -1,6 +1,6 @@
 /*
 
-TemplateMo 546 Sixteen Clothing
+TemplateMo 546 Shabu Paradise
 
 https://templatemo.com/tm-546-sixteen-clothing
 
@@ -89,11 +89,15 @@ a.filled-button:hover {
 }
 
 .products-heading {
-	background-image: url(../images/products-heading.jpg);
+	background-image: url(../images/products-heading.jpeg) ;
+	background-size: cover;
+	background-position: center center;
 }
 
 .about-heading {
-	background-image: url(../images/about-heading.jpg);
+	background-image: url(../images/about-heading.jpeg) ;
+	background-size: cover;
+	background-position: center center;
 }
 
 .contact-heading {
@@ -318,7 +322,9 @@ header .navbar {
 
 .banner-item-01 {
 	padding: 300px 0px;
-	background-image: url(../images/slide_01.jpg);
+	background-image: url(../images/slide_01.jpeg);
+	/* width: 600px;
+	height: 500px; */
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -326,7 +332,9 @@ header .navbar {
 
 .banner-item-02 {
 	padding: 300px 0px;
-	background-image: url(../images/slide_02.jpg);
+	/* width: 600px;
+	height: 500px; */
+	background-image: url(../images/slide_02.jpeg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -334,7 +342,9 @@ header .navbar {
 
 .banner-item-03 {
 	padding: 300px 0px;
-	background-image: url(../images/slide_03.jpg);
+	/* width: 600px;
+	height: 500px; */
+	background-image: url(../images/slide_03.jpeg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -361,7 +371,7 @@ header .navbar {
 }
 
 .banner .text-content h2 {
-	color: #fff;
+	color: #ee5;
 	font-size: 62px;
 	text-transform: uppercase;
 	letter-spacing: 5px;

@@ -8,14 +8,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
-
-    <title>Sixteen Clothing HTML Template</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+    <title>Shabu Paradise HTML Template</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <!--
 
-TemplateMo 546 Sixteen Clothing
+TemplateMo 546 Shabu Paradise
 
 https://templatemo.com/tm-546-sixteen-clothing
 
@@ -44,25 +44,26 @@ https://templatemo.com/tm-546-sixteen-clothing
     <header class="">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="index.html"><h2>Sixteen <em>Clothing</em></h2></a>
+          <a class="navbar-brand" href="index.html"><h2>Shabu <em>Paradise</em></h2></a>
+          <img src="https://scontent.fnak3-1.fna.fbcdn.net/v/t39.30808-6/284960341_407753884697834_4148064225908973995_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeGYT9UB9J_gZdFFZ6rMIMRaofnrdFKyxjuh-et0UrLGO5Q0tNTsmnKxCn8e-o5aIj7Gi1oBBU-kqnAHrS72v9PV&_nc_ohc=Fvb3J8TIcPoAX9zx8x7&_nc_ht=scontent.fnak3-1.fna&oh=00_AT_-bF3qtlj5nHa3L9HwK3_eNVi3rjI6S6V2CNX3BeAtkA&oe=634C6F49" width="50" height="45" style="margin-bottom: 20px; border-radius: .5em" alt="logo">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home
+                <a class="nav-link" href="index.html">หน้าหลัก
                   <span class="sr-only">(current)</span>
                 </a>
               </li> 
               <li class="nav-item">
-                <a class="nav-link" href="products.html">Our Products</a>
+                <a class="nav-link" href="products.html">เกี่ยวกับโต๊ะ</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">About Us</a>
+                <a class="nav-link" href="about.html">เกี่ยวกับเรา</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact Us</a>
+                <a class="nav-link" href="contact.html">ติดต่อเรา</a>
               </li>
 
               <li class="nav-item">
@@ -70,14 +71,21 @@ https://templatemo.com/tm-546-sixteen-clothing
               @if (Route::has('login'))
                 
                     @auth
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{url('showcart')}}">
+                            <i class="fa-regular fa-cart-shopping"></i>
+                            Cart[{{$count}}]</a>
+                      </li>
+
                         <x-app-layout>
     
                         </x-app-layout>                    
                     @else
-                        <li><a class="nav-link" href="{{ route('login') }}" >Log in</a></li>
+                        <li><a class="nav-link" href="{{ route('login') }}" >เข้าสู่ระบบ</a></li>
 
                         @if (Route::has('register'))
-                          <li><a class="nav-link" href="{{ route('register') }}" >Register</a></li>
+                          <li><a class="nav-link" href="{{ route('register') }}" >ลงทะเบียน</a></li>
                         @endif
                     @endauth
                 
@@ -89,6 +97,19 @@ https://templatemo.com/tm-546-sixteen-clothing
           </div>
         </div>
       </nav>
+
+      @if(session()->has('message'))
+
+      <div class="alert alert-success" >
+
+      <button type="button" class="close" data-dismiss="alert">x</button>
+
+      {{session()->get('message')}}
+
+      </div>
+
+      @endif
+
     </header>
 
     <!-- Page Content -->
@@ -97,20 +118,17 @@ https://templatemo.com/tm-546-sixteen-clothing
       <div class="owl-banner owl-carousel">
         <div class="banner-item-01">
           <div class="text-content">
-            <h4>Best Offer</h4>
-            <h2>New Arrivals On Sale</h2>
+            <h2>ร้านที่สะอาดที่สุด</h2>
           </div>
         </div>
         <div class="banner-item-02">
           <div class="text-content">
-            <h4>Flash Deals</h4>
-            <h2>Get your best products</h2>
+            <h2>วัตถุดิบ ดีเเละสะอาด</h2>
           </div>
         </div>
         <div class="banner-item-03">
           <div class="text-content">
-            <h4>Last Minute</h4>
-            <h2>Grab last minute deals</h2>
+            <h2>มา 4 จ่าย 3 ราคาย่อมเยา</h2>
           </div>
         </div>
       </div>
@@ -120,72 +138,10 @@ https://templatemo.com/tm-546-sixteen-clothing
     @include('user.product')
 
 
-    <div class="best-features">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="section-heading">
-              <h2>About Sixteen Clothing</h2>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="left-content">
-              <h4>Looking for the best products?</h4>
-              <p><a rel="nofollow" href="https://templatemo.com/tm-546-sixteen-clothing" target="_parent">This template</a> is free to use for your business websites. However, you have no permission to redistribute the downloadable ZIP file on any template collection website. <a rel="nofollow" href="https://templatemo.com/contact">Contact us</a> for more info.</p>
-              <ul class="featured-list">
-                <li><a href="#">Lorem ipsum dolor sit amet</a></li>
-                <li><a href="#">Consectetur an adipisicing elit</a></li>
-                <li><a href="#">It aquecorporis nulla aspernatur</a></li>
-                <li><a href="#">Corporis, omnis doloremque</a></li>
-                <li><a href="#">Non cum id reprehenderit</a></li>
-              </ul>
-              <a href="about.html" class="filled-button">Read More</a>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="right-image">
-              <img src="assets/images/feature-image.jpg" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
 
-    <div class="call-to-action">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="inner-content">
-              <div class="row">
-                <div class="col-md-8">
-                  <h4>Creative &amp; Unique <em>Sixteen</em> Products</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque corporis amet elite author nulla.</p>
-                </div>
-                <div class="col-md-4">
-                  <a href="#" class="filled-button">Purchase Now</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="inner-content">
-              <p>Copyright &copy; 2020 Sixteen Clothing Co., Ltd.
-            
-            - Design: <a rel="nofollow noopener" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+ 
+  
 
 
     <!-- Bootstrap core JavaScript -->

@@ -6,16 +6,10 @@
             <div class="card-body py-0 px-0 px-sm-3">
               <div class="row align-items-center">
                 <div class="col-4 col-sm-3 col-xl-2">
-                  <img src="assets/images/dashboard/Group126@2x.png" class="gradient-corona-img img-fluid" alt="">
+                  <img src="https://scontent.fnak4-2.fna.fbcdn.net/v/t39.30808-6/284960341_407753884697834_4148064225908973995_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeGYT9UB9J_gZdFFZ6rMIMRaofnrdFKyxjuh-et0UrLGO5Q0tNTsmnKxCn8e-o5aIj7Gi1oBBU-kqnAHrS72v9PV&_nc_ohc=Fvb3J8TIcPoAX-J-F5G&_nc_ht=scontent.fnak4-2.fna&oh=00_AT8SyJ9zyER4zXGypWXIwJ52vesRDHTe9H4VB82paErYxQ&oe=634C6F49" class="gradient-corona-img img-fluid" style="border-radius: 3em" alt="">
                 </div>
                 <div class="col-5 col-sm-7 col-xl-8 p-0">
-                  <h4 class="mb-1 mb-sm-0">Want even more features?</h4>
-                  <p class="mb-0 font-weight-normal d-none d-sm-block">Check out our Pro version with 5 unique layouts!</p>
-                </div>
-                <div class="col-3 col-sm-2 col-xl-2 ps-0 text-center">
-                  <span>
-                    <a href="https://www.bootstrapdash.com/product/corona-admin-template/" target="_blank" class="btn btn-outline-light btn-rounded get-started-btn">Upgrade to PRO</a>
-                  </span>
+                  <h4 class="mb-1 mb-sm-0">ShabuParadise</h4>
                 </div>
               </div>
             </div>
@@ -354,7 +348,7 @@
                       <td> 02312 </td>
                       <td> $14,500 </td>
                       <td> Website </td>
-                      <td> Cash on delivered </td>
+                      <td> Cash on จ่ายเเล้ว </td>
                       <td> 04 Dec 2019 </td>
                       <td>
                         <div class="badge badge-outline-warning">Pending</div>
